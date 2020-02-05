@@ -1,5 +1,7 @@
 {
   "name": "Etiquetas-Automatizadas",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
