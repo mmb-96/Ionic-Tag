@@ -5,5 +5,32 @@
 </ion-header>
 
 <ion-content>
+  <button ion-button icon-start (tap)="captureAndUpload()">
+    <ion-icon name="camera"></ion-icon>
+    Activate Cloud Vision
+  </button>
 
+  <ion-col *ngIf="result$ | async as result">
+
+    <h3>Hotdog?</h3>
+
+    <button *ngIf="result.hotdog" color="secondary" ion-button full>
+
+      Hotdog!!!
+    </button>
+
+    <button *ngIf="!result.hotdog" color="danger" ion-button full>
+
+      Not Hotdog :)
+    </button>
+
+    <h3>Labels</h3>
+
+    <ion-chip color="secondary" *ngFor="let label of result.labels">
+
+      <ion-label>{{ label }}</ion-label>
+
+    </ion-chip>
+
+  </ion-col>
 </ion-content>
