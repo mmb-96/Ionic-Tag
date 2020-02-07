@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { LoadingController, Loading } from 'ionic-angular';
 
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 import { tap, filter } from 'rxjs/operators';
 
 import { AngularFireStorage, AngularFireUploadTask } from 'angularfire2/storage';
 import { AngularFirestore} from 'angularfire2/firestore';
 
-import { Camera, CameraOptions } from '@ionic-native/camera';
+import { Camera, CameraOptions,  } from '@ionic-native/camera/ngx';
 
 @Component({
   selector: 'app-vision',

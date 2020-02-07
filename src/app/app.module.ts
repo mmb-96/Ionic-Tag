@@ -14,7 +14,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { AngularFireStorageModule } from 'angularfire2/storage';
 
-import { Camera } from '@ionic-native/camera';
+import { Camera } from '@ionic-native/camera/ngx';
 
 const firebaseConfig = {
   apiKey: 'AIzaSyClUaIIUrvNIPKY3B9olaDXrKCTFblskd4',
