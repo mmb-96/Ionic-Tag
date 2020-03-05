@@ -1,14 +1,62 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-      Ionic Blank
+    <ion-title class="ion-text-center">
+      Home
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+  <ion-item><h5>Seleccione cualquier característica para aplicar:</h5></ion-item>
+  <ion-radio-group (ionChange)="radioGroupChange($event)">
+      <ion-item>
+          <ion-label>Detección de objetos</ion-label>
+          <ion-radio value="OBJECT_LOCALIZATION checked"></ion-radio>
+      </ion-item>
+      <ion-item>
+          <ion-label>Detección web</ion-label>
+          <ion-radio value="WEB_DETECTION"></ion-radio>
+      </ion-item>
+      <ion-item>
+          <ion-label>Detección de puntos de referencia</ion-label>
+          <ion-radio value="LANDMARK_DETECTION"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Detección de etiquetas</ion-label>
+        <ion-radio value="LABEL_DETECTION"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Detección de texto</ion-label>
+        <ion-radio value="TEXT_DETECTION"></ion-radio>
+      </ion-item>
+      <ion-item>
+          <ion-label>Detección de logo</ion-label>
+          <ion-radio value="LOGO_DETECTION"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Detección de rostro</ion-label>
+        <ion-radio value="FACE_DETECTION"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Detección de búsqueda segura</ion-label>
+        <ion-radio value="SAFE_SEARCH_DETECTION"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Propiedades de imagen</ion-label>
+        <ion-radio value="IMAGE_PROPERTIES"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Consejos de cultivo</ion-label>
+        <ion-radio value="CROP_HINTS"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Detección de texto del documento</ion-label>
+        <ion-radio value="DOCUMENT_TEXT_DETECTION"></ion-radio>
+      </ion-item>
+  </ion-radio-group>
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+      <ion-fab-button (click)="presentAlertConfirm()">
+        <ion-icon name="camera">
+        </ion-icon>
+      </ion-fab-button>
+    </ion-fab>
 </ion-content>

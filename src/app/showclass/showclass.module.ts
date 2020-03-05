@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { VisionPageRoutingModule } from './vision-routing.module';
+import { ShowclassPageRoutingModule } from './showclass-routing.module';
 
-import { VisionPage } from './vision.page';
+import { ShowclassPage } from './showclass.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    VisionPageRoutingModule
+    ShowclassPageRoutingModule
   ],
-  declarations: [VisionPage]
+  declarations: [ShowclassPage]
 })
-export class VisionPageModule {}
+export class ShowclassPageModule {}

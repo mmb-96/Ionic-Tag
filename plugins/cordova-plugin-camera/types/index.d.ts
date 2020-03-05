@@ -17,10 +17,8 @@ interface Navigator {
  * This plugin provides an API for taking pictures and for choosing images from the system's image library.
  */
 interface Camera {
-  PictureSourceType: any;
+  [x: string]: any;
   MediaType: any;
-  EncodingType: any;
-  DestinationType: any;
     /**
      * Removes intermediate photos taken by the camera from temporary storage.
      * @param onSuccess Success callback, that called when cleanup succeeds.
